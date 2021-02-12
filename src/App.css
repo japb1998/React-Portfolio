@@ -36,3 +36,124 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.main-container{
+  border: #fafafa solid 1px;
+  margin: 5rem auto;
+  padding: 0 5rem 5rem 5rem;
+  border-radius: .25rem;
+}
+.main-container h1 {
+  color: #f1356d;
+}
+.main-container:hover{box-shadow: 1px 3px 5px rgba(0,0,0,0.1);}
+.container-title{
+ margin-bottom: 1rem;
+ border-bottom: 1px solid #fafafa;
+}
+.content {
+  max-width: 100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.project-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.project-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.project-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #ffefef;
+  background: rgb(255, 255, 255);
+}
+.footer h3 {
+  font-size: 1.5rem;
+  color: #f1356d;
+}
+.footer .links {
+  margin-left: auto;
+}
+.footer a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.footer a:hover {
+  color: #f1356d;
+}
+.description{
+  margin: 40px auto;
+  padding: 20px;
+}
+.description{ padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);}
+  .description h2 {
+    color: #f1356d;
+  }
+ 
+.button {
+    background-color:#f1356d; /* Green */
+    border: 1px solid;
+    border-radius: .25rem;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.container-title{
+  color: #f1356d
+}
+.main-dark h1 {
+  color:black;
+}
