@@ -1,14 +1,17 @@
 import {Container,Row,Col,Image} from 'react-bootstrap'
+
 function Home (){
+    const img = '/IMG_1950.jpg';
     return(
         <Container className='main-container'> 
-        <div className='container-title'><h1>Javier Perez</h1></div>
+        <div className='container-title'><h1>About</h1></div>
             <Row >
-               <Col xs={6} md={4}>
-      <Image src="https://via.placeholder.com/150
-C/O https://placeholder.com/" rounded />
+               <Col xs={12} md={4} >
+      <Image style={{width:'200px',height:'200px'}}src={img} rounded />
     </Col>
-                <Col><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam officia incidunt sint atque harum. Odio accusamus repellendus exercitationem ducimus fugiat veniam, debitis ad. Adipisci culpa laborum distinctio provident unde! Perspiciatis.</p></Col>
+                <Col xs={12} md={8}><p>Former private pilot, with 2 years of studies in mechanical engineer.
+
+Currently enrolled on trilogy's coding bootcamp with the goal of working for a FAANG company</p></Col>
             </Row>
         </Container>
     )

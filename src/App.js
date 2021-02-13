@@ -19,16 +19,26 @@ console.log(darkTheme , toggleTheme)
     {
         id:1,
         title:'Budget Tracker',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus fuga natus recusandae quaerat eos temporibus blanditiis unde optio, ipsum repellat eligendi! Distinctio explicabo fuga at, veritatis voluptatibus molestiae voluptate!',
+        description:"An app for people who wants to save money but doesn't want to make the numbers",
         author:'Javier Perez',
-        technologies:'Html,Css,Javascript'
+        technologies:'Html,Css,Javascript,Node.js,Express,MongoDB',
+        link:'https://young-retreat-92535.herokuapp.com/login'
     },{
       id:2,
       title:'Movies&Food',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus fuga natus recusandae quaerat eos temporibus blanditiis unde optio, ipsum repellat eligendi! Distinctio explicabo fuga at, veritatis voluptatibus molestiae voluptate!',
       author:'Javier Perez',
-      technologies:'Html,Css,Javascript'
-  }];
+      technologies:'Html,Css,Javascript',
+      link:'Placeholder'
+  },{
+    id:4,
+      title:'Responsive Portfolio',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus fuga natus recusandae quaerat eos temporibus blanditiis unde optio, ipsum repellat eligendi! Distinctio explicabo fuga at, veritatis voluptatibus molestiae voluptate!',
+      author:'Javier Perez',
+      technologies:'Html,Css,Javascript',
+      link:'https://japb1998.github.io/NewPortfolio/'
+  },
+];
 
   return (
     <Router>
