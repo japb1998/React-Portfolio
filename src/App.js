@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React,{useContext} from 'react';
-import {ThemeProvider , useTheme,useThemeUpdate} from './ThemeContext'
+import {ThemeProvider , useTheme} from './ThemeContext'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Column} from 'react-bootstrap';
 import NavBarComponent from './components/NavBar';
@@ -12,9 +12,9 @@ import  Footer  from "./components/Footer";
 import ProjectDetails from './components/ProjectDetails';
 
 function App() {
-const darkTheme = useTheme();
-const toggleTheme = useThemeUpdate();
-console.log(darkTheme , toggleTheme)
+  const darkTheme = true;
+// const [darkTheme,toggleTheme] = useTheme();
+// console.log(darkTheme , toggleTheme)
   const projects = [
     {
         id:1,
@@ -55,7 +55,7 @@ console.log(darkTheme , toggleTheme)
   </Route>
   </Switch>
     </div>
-    <button className='button' onClick={()=>(toggleTheme())}>Click</button>
+    
     <Footer></Footer>
     </ThemeProvider>
     </Router>

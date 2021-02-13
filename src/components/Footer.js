@@ -1,22 +1,10 @@
 import {Link} from 'react-router-dom';
-
+import { useTheme } from '../ThemeContext'
 
 function Footer() {
+    const [darkTheme] = useTheme();
     return(
-//     <Navbar bg="light" expand="lg">
-//   <Navbar.Brand >React-Bootstrap</Navbar.Brand>
-//   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//   <Navbar.Collapse id="basic-navbar-nav">
-//     <Nav className="mr-auto">
-//       <Nav.Link >
-//       <Link to='/'>Home</Link></Nav.Link>
-//       <Nav.Link >
-//       <Link to='/portfolio'>Portfolio
-//       </Link></Nav.Link>
-//     </Nav>
-//   </Navbar.Collapse>
-// </Navbar>
- <nav className="footer">
+ <nav className={`${darkTheme ? 'dark': ''} footer`}>
  <h3>Made with Effort by Javier Perez</h3>
  <div className="links">
      <a><Link to='/'>Home</Link></a>

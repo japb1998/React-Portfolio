@@ -1,12 +1,13 @@
 import {Container,Row,Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import {ThemeContext, useTheme} from './ThemeContext';
 function Portafolio({projects,showMore}){
-    
+    const [darkTheme] = useTheme();
     return(
-        <div className="content">
+        <div className={` content`}>
             <h1>projects</h1>
 {projects.map((project)=>(
-        <div className="project-preview" key={project.id}>
+        <div className={`${darkTheme ? 'dark' : 'light'} project-preview`} key={project.id}>
             <h2>{project.title}</h2>
 <p>{project.description}</p>
     <p>Written by {project.author}</p>

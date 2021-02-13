@@ -1,11 +1,15 @@
 import {useParams} from 'react-router-dom';
 import {Image} from 'react-bootstrap';
+import {useTheme} from '../ThemeContext';
 const ProjectDetails = ({projects}) => {
     const {id} = useParams();
     const project = projects.filter((item)=> item.id == id)
-    console.log(project)
+    console.log(project);
+    const [darkTheme,toggleTheme] = useTheme();
+console.log(darkTheme , toggleTheme)
     return(
-        <div className='description'>
+      
+        <div className={`${darkTheme ? 'dark' : 'light'} description`}>
             {
   <div className="none" key={project[0].id}>
  <h2>{project[0].title}<span><a href={project[0].link} className='button projectRedirect' target='_blank'> More</a></span></h2>

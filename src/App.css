@@ -87,7 +87,7 @@
 }
 .project-preview {
   padding: 10px 16px;
-  margin: 20px 0;
+  margin: 20px 20px;
   border-bottom: 1px solid #fafafa;
   max-height: 300px;
   overflow: auto;
@@ -166,8 +166,13 @@ max-width: 95vw;}
 .container-title{
   color: #f1356d
 }
-.main-dark h1 {
-  color:black;
+.dark  {
+  color:white;
+  background:#192734
+}
+
+.dark p,h1 {
+  color: white;
 }
 .projectRedirect{
   font-size: 1rem;
