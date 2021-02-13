@@ -5,7 +5,7 @@ import {ThemeProvider , useTheme,useThemeUpdate} from './ThemeContext'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Column} from 'react-bootstrap';
 import NavBarComponent from './components/NavBar';
-import { BrowserRouter as Router, Route,Switch} from "react-router-dom";
+import { HashRouter as Router, Route,Switch} from "react-router-dom";
 import Portfolio from './Portfolio';
 import Home from './Home';
 import  Footer  from "./components/Footer";
